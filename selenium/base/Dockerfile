@@ -23,7 +23,7 @@ RUN \
     fi && \
     upx /fileserver/fileserver
 
-FROM ubuntu:20.04
+FROM --platform=linux/x86_64 ubuntu:20.04
 
 RUN \
     apt update && \
